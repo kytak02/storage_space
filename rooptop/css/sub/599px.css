@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+@media (max-width:599px) {
+	body {background: #151111;}
+
+	#wrap_2 {width: 100%; height: 7000px; float: left; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+	#content {float: left; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+
+
+	#container1 {width: 100%; height: 1050px; margin: 0 auto; padding: 20px;}
+
+	.ctbox1 {width: 100%; height: 100%; float: left;}
+
+	.ctbox1 > img {width: 100%; height: 40%;}
+
+	.ctbox1 > h1 {font-size: 30px; color: #fff; letter-spacing: 2px; margin: 80px 0 0 0px;}
+
+	.ctbox1 > p {font-size: 16px; color: gray; margin: 10px 0 20px 0px;}
+
+
+
+
+
+
+
+	#container2 {width: 100%; height: 1050px; margin: 0 auto; padding: 20px;}
+
+	.ctbox2 {width: 100%; height: 100%; float: left;}
+
+	.ctbox2 > img {width: 100%; height: 40%;}
+
+	.ctbox2 > h1 {font-size: 30px; color: #fff; letter-spacing: 2px; margin: 30px 0 0 0px;}
+
+	.ctbox2 > p {font-size: 16px; color: gray; margin: 10px 0 20px 0px;}
+
+
+
+
+
+
+	#container3 {width: 100%; height: 1050px; margin: 0 auto; padding: 20px;}
+
+	.ctbox3 {width: 100%; height: 100%; float: left;}
+
+	.ctbox3 > img {width: 100%; height: 30%;}
+
+	.ctbox3 > h1 {font-size: 30px; color: #fff; letter-spacing: 2px; margin: 30px 0 0 0px;}
+
+	.ctbox3 > p {font-size: 16px; color: gray; margin: 10px 0 20px 0px;}
+
+	.ctbox3 > button {width: 70px; height: 25px; font-size: 11px; padding: 5px; border: none; background-color: #c49b63; margin: 0px 0 0 5px; border-radius: 2px;}
+
+	.ctbox3 > button:hover {border: 1px solid #c49b63; background-color: transparent; transition: all 0.2s; cursor: pointer;}
+
+	.ctbox3 > button > a {color: #fff;}
+
+
+
+
+
+
+	#container4 {width: 100%; height: 300px; float: left; margin: 80px 0 0 0px; display: flex; flex-direction: row; justify-content: center; align-items: center;}
+
+	.chefbox > .textbox {width: 60%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 30px;;}
+
+	.chefbox > img {width: 22%; height: 70%; float: left; margin: 30px 30px 0 30px;}
+
+	.chefbox > .textbox > h2 {font-size: 25px; color: #fff;}		
+
+	.chefbox > .textbox > p {font-size: 15px; color: gray;}
+
+
+
+
+
+
+	#container5 {width: 100%; height: 1500px; margin: 0 auto;}
+
+	.ctbox5 {width: 100%; height: 100%; float: left; display: flex; flex-direction: column; justify-content: space-evenly;}
+
+	.ctbox5 > h1 {font-size: 30px; color: #fff; margin: 0px 0 30px 40px;}
+
+
+
+
+	.smallbox {width: 100%; height: 250px; float: left; display: flex; justify-content: space-between;}	
+
+	.smallbox > .textbox {width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 30px; margin: 0px 50px 0 0px;}
+
+	.smallbox > img {width: 18%; height: 50%; float: left; margin: 60px 0 0 30px;}
+
+	.smallbox > .textbox > h2 {font-size: 25px; color: #fff;}
+
+	.smallbox > .textbox > h4 {color: #757575;}	
+
+	.smallbox > .textbox > p {font-size: 15px; color: gray;}
+
+
+
+
+	.smallbox1 {width: 100%; height: 250px; float: left; display: flex; justify-content: space-between; flex-direction: row-reverse;}		
+
+	.smallbox1 > .textbox {width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 30px; text-align: right; margin: 0px 0 0 50px;}
+
+	.smallbox1 > img {width: 18%; height: 50%; float: left; margin: 60px 30px 0 0px;}
+
+	.smallbox1 > .textbox > h2 {font-size: 25px; color: #fff;}
+
+	.smallbox1 > .textbox > h4 {color: #757575;}	
+
+	.smallbox1 > .textbox > p {font-size: 15px; color: gray;}
+
+
+
+
+	#container6 {width: 100%; height: 700px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+	.csbox {width: 86%; height: 650px; display: flex; flex-direction: column; justify-content: space-evenly; padding: 30px;}
+
+	.csbox > h1 {color: #fff;}
+
+	.csbox > input {width: 100%; height: 80px; background-color: transparent; border: none; border-bottom: 1px solid #616161; color: gray; font-size: 15px;}
+
+	.csbox > textarea {width: 100%; height: 100px; background-color: transparent; border: none; border-bottom: 1px solid #616161; color: gray; font-size: 15px;}
+
+	.csbox > a > button {width: 50%; height: 50px; background-color: #c49b63; border: none; padding: 15px;}
+
+	.csbox > a > button:hover {background-color: transparent; border: 1px solid #c49b63; cursor: pointer; color: #c49b63; transition: all 0.2s;}
+
+
+
+
+
+
+
+
+
+
+
+	#side {width: 90%; height: 2000px; float: left; display: flex; flex-direction: column;}
+
+
+
+	.sidebox1 {width: 100%; height: 65%; float: left; display: flex; flex-direction: column;}
+
+
+
+	.searchbox {width: 100%; height: 60px;}
+
+	.searchbox > input {width: 100%; height: 85%; margin: 0 auto; background-color: transparent; border: 1px solid #bdbdbd; color: #fff; float: left;}
+
+
+
+
+	.categories {width: 95%; height: 300px; margin: 50px 0 0 0px;}
+
+	.categories > h2 {font-size: 25px; color: #fff; margin: 0px 0 20px 0px;}
+
+	.categories > ul > li > a {font-size: 18px; color: gray; line-height: 40px;}
+
+	.categories > ul > li > a > span {float: right;}
+
+
+
+	.recentbox {width: 100%; height: 380px; color: #fff; margin: 50px 0 0 0px;}	
+
+	.recentbox img {width: 24%; height: 80px; float: left; margin: 0px 20px 0 0px;}
+
+	.recentbox ul > li > strong > h3 {font-size:23px;}
+
+	.recentbox ul > li > p {font-size: 13px; float: left; color: gray;}
+
+	.recentbox ul > li > p img {width: 15px; height: 15px;  margin: 5px 5px 0 5px;}
+
+
+
+	
+
+	.sidebox2 {width: 100%; height: 30%; float: left;}
+
+
+	.tagbox {width: 100%; height: 190px;}
+
+	.tagbox > h3 {color: #fff; font-size: 23px;}
+
+	.tagbox > a > button {width: 85px; height: 25px; font-size: 11px; padding: 5px; border: none; background-color: #c49b63; margin: 1%; border-radius: 2px;}
+
+	.tagbox > a > button:hover {border: 1px solid #c49b63; background-color: transparent; transition: all 0.1s; cursor: pointer;}
+
+	.tagbox > a > button {color: #fff;}
+
+
+
+	.Paragraphbox {width: 100%; height: 300px; float: left;}
+
+	.Paragraphbox > h2 {color: #fff; font-size: 23px; margin: 0px 0 20px 0px;}
+
+	.Paragraphbox > p {color: gray;}
+
+}

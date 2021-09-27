@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+      * {margin: 0; font-family: 'Nanum Gothic', sans-serif;}
+      ul,ol,li {list-style: none; margin: 0; padding: 0;}
+      a {text-decoration: none;}
+      #fullpage {position: relative;}	
+
+      #menu {width: 80px; height: 480px; float: left; position: absolute; top: 50%; transform: translateY(-50%); right: 0; position: fixed; z-index: 1; display: flex; flex-direction: column; justify-content: space-between; margin-right: 10px;}
+      #menu > li {width: 100%; height: 65px; float: left; text-align: center; border-radius: 5px; font-size: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #DFDCDC; line-height: 20px; padding-top: 5px;}
+      #menu > li:nth-of-type(1) {background: #F9F6F6;}
+      #menu > li > a {color: #7F8181;}
+
+      .fa-folder {font-size: 25px; color: #3C3B3B;}
+      .fa-book {font-size: 25px; color: #3C3B3B;}
+      .fa-utensil-spoon {font-size: 25px; color: #3C3B3B;}
+      .fa-images {font-size: 25px; color: #3C3B3B;}
+      .fa-lightbulb {font-size: 25px; color: #3C3B3B;}
+      .fa-smile {font-size: 25px; color: #3C3B3B;}
+
+      .sec_wrap {width: 1400px; height: 100%; margin: 0 auto; position: relative;}		
+      .sub_wrap {width: 65%; height: 65%; padding: 50px 0 0 100px; position: relative; border-radius: 0px 50px 0px 50px;}
+      .sub_wrap > p {font-size: 14px; line-height: 22px;}	
+      .sub {width: 42%; height: 100%; float: left; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+
+      .main {width: 58%; height: 100%; float: left; position: relative; overflow: hidden;}
+      .main > img {width: 100%; height: auto;}
+      .main > img:hover {opacity: 0.7; cursor: pointer;}
+
+      .point_color {width: 100px; display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 10px;}
+      .point_color > div {width: 30px; height: 30px; float: left; border-radius: 50px;}
+
+      .phonebox {width: 252px; height: 490px; position: absolute; top: 45%; left: 35%; z-index: 1; background-image: url("../img/iphone.png"); background-size: 100% 100%;}
+      .phone_wrap {width: 241px; height: 480px; border-radius: 28px; overflow: hidden; margin-top: 5px; margin-left: 6px;}
+      .phone_wrap > img {width: 100%; height: auto;}
+
+      .sc1_wrap {width: 100%; height: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; background: #f5f5f5; background-image: url("../img/background.jpg");}
+
+      /* 인터파크 */
+      .h1-1 {color: #f4511e; font-size: 40px;}
+      .h3-1 {color: #616161;}
+      .sub_wrap > .btn1 {width: 120px; height: 30px; background: #f4511e; color: #fff; border: 1px solid #f4511e; float: left; text-align: center; font-size: 14px; line-height: 28px;}
+      .sub_wrap > .btn2 {width: 120px; height: 30px; background: #f4511e; color: #fff; border: 1px solid #f4511e; float: left; text-align: center; font-size: 14px; line-height: 28px; margin-left: 10px;}
+      .sub_wrap > .btn1:hover {cursor: pointer; background: gold; border: 1px solid gold; color: #fff; transition: all 0.3s ease}
+      .sub_wrap > .btn2:hover {cursor: pointer; background: gold; border: 1px solid gold; color: #fff; transition: all 0.3s ease}
+      .red {background: #f4511e;}
+      .gray {background: #e0e0e0;}
+      .white {background: #fff;}
+
+      /* 루프탑 */
+      .h1-2 {color: #deb887; font-size: 40px;}
+      .h3-2 {color: #616161;}
+      .sub_wrap > .btn3 {width: 120px; height: 30px; background: #151111; color: #fff; border: 1px solid #151111; float: left; text-align: center; font-size: 14px; line-height: 28px;}
+      .sub_wrap > .btn4 {width: 120px; height: 30px; background: #151111; color: #fff; border: 1px solid #151111; float: left; text-align: center; font-size: 14px; line-height: 28px; margin-left: 10px;}
+      .sub_wrap > .btn3:hover {cursor: pointer; background: #deb887; border: 1px solid #deb887; color: #fff; transition: all 0.3s ease}
+      .sub_wrap > .btn4:hover {cursor: pointer; background: #deb887; border: 1px solid #deb887; color: #fff; transition: all 0.3s ease}
+      .black {background: #000;}
+      .darkgray {background: #151111;}
+      .wood {background: #deb887;}
+
+      /* 매트로폴리탄 미술관 */
+      .h1-3 {color: #ef6c00; font-size: 40px;}
+      .h3-3 {color: #616161;}
+      .sub_wrap > .btn5 {width: 120px; height: 30px; background: #ef6c00; color: #fff; border: 1px solid #ef6c00; float: left; text-align: center; font-size: 14px; line-height: 28px;}
+      .sub_wrap > .btn6 {width: 120px; height: 30px; background: #ef6c00; color: #fff; border: 1px solid #ef6c00; float: left; text-align: center; font-size: 14px; line-height: 28px; margin-left: 10px;}
+      .sub_wrap > .btn5:hover {cursor: pointer; background: #f5f5f5; border: 1px solid #f5f5f5; color: #000; transition: all 0.3s ease}
+      .sub_wrap > .btn6:hover {cursor: pointer; background: #f5f5f5; border: 1px solid #f5f5f5; color: #000; transition: all 0.3s ease}
+      .black {background: #000;}
+      .orange {background: #ef6c00;}
+      .lightgray {background: #f5f5f5;}
+
+      /* 히트조명 */
+      .h1-4 {color: #fbc02d; font-size: 40px;}
+      .h3-4 {color: #616161;}
+      .sub_wrap > .btn7 {width: 120px; height: 30px; background: #fbc02d; color: #fff; border: 1px solid #fbc02d; float: left; text-align: center; font-size: 14px; line-height: 28px;}
+      .sub_wrap > .btn8 {width: 120px; height: 30px; background: #fbc02d; color: #fff; border: 1px solid #fbc02d; float: left; text-align: center; font-size: 14px; line-height: 28px; margin-left: 10px;}
+      .sub_wrap > .btn7:hover {cursor: pointer; background: #e0e0e0; border: 1px solid #e0e0e0; color: #000; transition: all 0.3s ease}
+      .sub_wrap > .btn8:hover {cursor: pointer; background: #e0e0e0; border: 1px solid #e0e0e0; color: #000; transition: all 0.3s ease}
+      .gold {background: gold;}
+      .brightgray {background: #e0e0e0;}
+      .white {background: #fff;}
+
+
+
+      /* about me */	
+      .sc5_wrap {width: 100%; height: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; background-image: url("../img/background.jpg");}
+      .about_wrap {width: 1400px; height: 700px; background: #fff; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; border-radius: 0px 100px 0px 100px; box-shadow: 4px 4px 4px #bdbdbd;}
+      .aboutbox {width: 1300px; height: 600px; float: left;}
+      .aboutbox > h1 {font-size: 35px; margin-bottom: 10px;}
+      .aboutbox > h1 > span {border-bottom: 3px solid gold; padding-bottom: 10px;}
+      .aboutbox > p > strong {font-size: 22px; color: #757575; font-weight: bold;}
+
+      .mebox {width: 220px; height: 430px; float: left; margin-top: 20px; display: flex; flex-direction: column; justify-content: space-between;}
+
+      .idphoto {width: 220px; height: 300px; background: gold; float: left;}
+      .idphoto > img {width: 100%; height: 100%;}	
+      .promise {width: 220px; height: 120px; float: left;}
+
+      .otherbox {width: 320px; height: 460px; float: left; margin-top: 10px; margin-left: 100px;}
+      .otherbox > .sc6_title {width: 100%; height: 50px; border-bottom: 1px solid #e0e0e0; font-size: 32px; font-weight: bold; line-height: 50px;}
+
+      .otherbox > table {font-size: 13px; line-height: 30px;}
+      .otherbox > table tr td:first-of-type {width: 100px; font-weight: bold; font-size: 16px;}
+
+      .skillbox {width: 450px; height: 400px; float: left; margin-top: 10px; margin-left: 100px;}
+      .skillbox > .sc6_title {width: 100%; height: 50px; border-bottom: 1px solid #e0e0e0; font-size: 32px; font-weight: bold; line-height: 50px;}
+      .skillbox > ul > li {line-height: 26px; font-size: 13px;}
+
+      .skillbox > ul > .bold {font-weight: bold; font-size: 18px;}

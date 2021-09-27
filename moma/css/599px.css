@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+@media (max-width: 599px) {
+
+		#slider {background-image:url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/2b/d1/fa/photo2jpg.jpg?w=1200&h=-1&s=1"); background-size: cover;}
+
+		#container1 {width: 100%; height: 1600px; float: left; display: flex;flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox1_1 {width: 80%; height: 200px; float: left; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+		.ctbox1_1 > h1 {font-size: 40px; color: #ef6c00; font-family: 'Oswald', sans-serif; letter-spacing: 2px;}
+
+		.ctbox1_1 > p {font-size: 15px; color: #000;}
+
+
+
+
+		#tiebox1 {width: 80%; height: 1300px; float: left; margin: 0 auto; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox1_2 {width: 100%; height: 220px; float: left; margin: 1%; display: flex; flex-direction: column;}
+
+		.ctbox1_2 > img {width: 60px; height: 60px; float: left;}
+
+		.ctbox1_2 > h2 {color: #ef6c00; margin: 0px 0 10px 0px; font-family: 'Oswald', sans-serif; letter-spacing: 2px;}
+
+		.ctbox1_2 > p {color: #000; line-height: 25px;}
+
+
+
+
+
+
+		#container2 {width: 100%; height: 2300px; float: left; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;} 
+
+		#tiebox2 {width: 90%; height: 2200px; float: left; margin: 0 auto;}
+
+		#tiebox2_1 {width: 100%; height: 50%; float: left; margin: 0 auto; display: flex; flex-direction: column; justify-content: center;}
+
+		#tiebox2_2 {width: 100%; height: 50%; float: left; margin: 0 auto; display: flex; flex-direction: column-reverse; justify-content: center;}
+
+		.ctbox2_1 {width: 100%; height: 100%; float: left;}
+
+		.ctbox2_2 {width: 100%; height: 100%; float: left; padding: 50px; text-align: left;}
+
+		.ctbox2_1 > img {width: 100%; height: 100%;}
+
+		.ctbox2_2 > h1 {font-size: 30px; color: #ef6c00;}
+
+		.ctbox2_2 > p {font-size: 17px; color: #000;}
+
+		.ctbox2_2 > ul > li {font-size: 17px; color: #000;}
+
+		.ctbox2_2 > ul > li > span {color: #ef6c00; margin: 0px 20px 0 0px; font-size: 25px;}
+
+
+
+
+
+
+		#banner1 {width: 100%; height: 900px; float: left; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+
+
+		.bnbox1_1 {width: 90%; height: 400px; float: left;}
+
+		#tiebox3 {width: 100%; height: 500px; float: left; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+
+		.bnbox1_1 > img {width: 100%; height: 100%;}
+
+		.bnbox1_2 {width: 45%; height: 40%; margin: 0px 0 0 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+		.bnbox1_2 > h2 {font-size: 45px; color: #ef6c00; border-bottom: 2px solid #666; padding-bottom: 20px;}
+
+		.bnbox1_2 > h4 {font-size: 17px; color: #000;}
+
+
+
+
+
+		#container3 {width: 100%; height: 1400px; float: left; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; padding: 50px; background-color: #eee;}
+
+		.ctbox3_1 {width: 100%; height: 150px; float: left; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox3_1 > h1 {font-size: 50px; color: #ef6c00; font-family: 'Oswald', sans-serif; letter-spacing: 2px;}
+
+		.ctbox3_1 > p {color: #000;}
+
+		#tiebox4 {width: 100%; height: 1100px; float: left; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox3_2 {width: 100%; height: 100%; float: left; background-color: #bdbdbd; border-radius: 10px; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; margin-top: 20px;}
+
+		.ctbox3_2 > img {width: 150px; height: 150px; border-radius: 80px;}
+
+		.ctbox3_2 > h3 {font-size: 20px; color: #ef6c00; font-family: 'Oswald', sans-serif; letter-spacing: 2px;}
+
+		.ctbox3_2 > p {font-size: 14px;}
+
+		.smallbox1 {width: 35%; height: 25px; float: left; display: flex; flex-direction: row; justify-content: space-evenly;}
+
+		.smallbox1 > img {width: 22%; height: 100%;}
+
+
+
+
+
+		#container4 {width: 100%; height: 1650px; float: left; display: flex; flex-direction: column; justify-content: space-evenly;}
+
+		.ctbox4_1 {width: 100%; height: 200px; float: left; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+		.ctbox4_1 > h1 {color: #ef6c00; font-size: 40px; font-family: 'Oswald', sans-serif; letter-spacing: 2px;}
+
+		.ctbox4_1 > p {font-size: 17px;}
+
+		#tiebox5 {width: 100%; height: 1500px; float: left; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox4_2 {width: 90%; height: 30%; float: left; background-color: #eee; border-radius: 10px; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; text-align: center; margin-top: 20px;}
+
+		.ctbox4_2 > h2 {font-size: 40px; font-family: 'Oswald', sans-serif; letter-spacing: 2px;}
+
+		.ctbox4_2 > h3 {font-size: 25px; color: gray;}
+
+		.ctbox4_2 > h3 > span {color: #ef6c00; font-size: 50px;}
+
+		.ctbox4_2 > ul {line-height: 40px; text-align: left;}
+
+		.ctbox4_2 > ul > li {font-size: 14px;}
+
+		.ctbox4_2 > ul > li > span {color: #43a047; font-size: 23px; margin: 0px 20px 0 0px;}
+
+		.ctbox4_2 > a > button {width: 100px; height: 40px; background-color: #9e9e9e;   border: 2px solid #9e9e9e; border-radius: 5px; color: #fff;}
+
+		.ctbox4_2 > a > button:hover {cursor: pointer; background-color: transparent; color: #000; transition: all 0.2s;}
+
+
+
+
+
+
+
+		#container5 {width: 100%; height: 2000px; float: left; background-color: #eee; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox5_1 {width: 100%; height: 100px; float: left; display: flex; justify-content: center; align-items: center;}
+
+		.ctbox5_1 > h1 {font-size: 35px; color: #ef6c00; letter-spacing: 2px; font-family: 'Oswald', sans-serif;}
+
+
+		#tiebox6 {width: 100%; height: 1800px; float: left; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;}
+
+		.ctbox5_2 {width: 100%; height: 11%; float: left; display: flex; flex-direction: column; justify-content: center; text-align: left; margin-top: 10px; padding: 20px;}
+
+		.ctbox5_2 > h2 {font-size: 25px; color: #ef6c00; letter-spacing: 2px; font-family: 'Oswald', sans-serif;}
+
+		.ctbox5_2 > p {font-size: 16px;}
+
+
+
+
+
+		#container6 {width: 100%; height: 1550px; float: left; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox6_1 {width: 100%; height: 100px; float: left; display: flex; justify-content: center; align-items: center;}
+
+		.ctbox6_1 > h1 {font-size: 50px; color: #ef6c00; letter-spacing: 2px; font-family: 'Oswald', sans-serif;}
+
+		#tiebox7 {width: 100%; height: 1400px; float: left; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox6_2 {width: 100%; height: 30%; float: left; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox6_2:nth-child(2) {display: flex; flex-direction: column-reverse;}
+
+		.smallbox2_1 {width: 80%; height: 50%; float: left; background-color: #e0e0e0; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; border-radius: 5px;}
+
+		.smallbox2_1 > p {font-size: 17px; font-family: 'Londrina Solid', cursive; color: #616161; line-height: 25px;}
+
+		.smallbox2_2 {width: 60%; height: 30%; float: left; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.smallbox2_2 > img {width: 100px; height: 100px; border-radius: 50px;}
+
+
+
+
+
+		#container7 {width: 100%; height: 1500px; float: left; background-color: #eee; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+		.ctbox7_1 {width: 100%; height: 100px; float: left; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+		.ctbox7_1 > span {font-size: 15px; font-weight: bold; margin: 0px 0 -10px 0px; color: #424242;}
+
+		.ctbox7_1 > h1 {font-size: 50px; color: #ef6c00; letter-spacing: 2px; font-family: 'Oswald', sans-serif;}
+
+		#tiebox8 {width: 100%; height: 1300px; float: left; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;}
+
+		.ctbox7_2 {width: 100%; height: 50%; float: left; padding: 20px;}
+
+		.ctbox7_2 > img {width: 100%; height: 60%; border-radius: 5px;}
+
+		.ctbox7_2 > h1 {font-size: 30px; color: #ef6c00; font-family: 'Oswald', sans-serif;}
+
+		.ctbox7_2 > span {font-size: 14px; color: gray;}
+
+		.ctbox7_2 > span > strong {color: #ef6c00;}
+
+		.ctbox7_2 > p {font-size: 16px; color: #616161; line-height: 25px;}
+
+		.ctbox7_2 > h3 > a {font-size: 18px; color: #ef6c00;}
+
+		.ctbox7_2 > h3 > a:hover {transition: all 0.2s; opacity: 0.5;}
+
+
+
+
+
+		#container8 {width: 100%; height: 1200px; float: left; display: flex; flex-direction: column; align-items: center; padding: 20px;}
+
+		.ctbox8_1 {width: 100%; height: 100px; float: left; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 20px 0 20px 0px;}
+
+		.ctbox8_1 > span {font-size: 15px; font-weight: bold; margin: 0px 0 -10px 0px; color: #424242;}
+
+		.ctbox8_1 > h1 {font-size: 50px; color: #ef6c00; letter-spacing: 2px; font-family: 'Oswald', sans-serif;}
+
+		#tiebox9 {width: 100%; height: 500px; float: left; display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+
+		.ctbox8_2 {width: 100%; height: 600px; float: left; color: #000; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;} 
+
+		.ctbox8_2 > .name {width: 100%; height: 60px; border: none; border-radius: 5px; background-color: #eee; color: #fff; margin: 0px 10px 0 10px;}
+
+		.ctbox8_2 > .email {width: 96%; height: 60px; border: none; border-radius: 5px; background-color: #eee; color: #fff;}
+
+		.ctbox8_2 > textarea {width: 96%; height: 250px; border: none; border-radius: 5px; background-color: #eee; color: #fff;}	
+
+		.ctbox8_2 > a {width: 100%; height: 50px; margin: 10px 0 0 10px;}
+
+		.ctbox8_2 > a > button {width: 98%; height: 50px; background-color: #ef6c00; border: none; color: #fff; border-radius: 5px; border: 1px solid #ef6c00;}
+
+		.ctbox8_2 > a > button:hover {background-color: transparent; color: #000; transition: all 0.2s; cursor: pointer;}
+
+
+
+
+
+
+		.ctbox8_3 {width: 100%; height: 70%; float: left; text-align: left; padding: 20px; display: flex; flex-direction: column; justify-content: center; margin-top: 50px;}
+
+		.ctbox8_3 > h1 {font-size: 35px; color: #ef6c00; font-family: 'Oswald', sans-serif;}
+
+		.ctbox8_3 > p {font-size: 17px; margin-bottom: 30px;}
+
+		.ctbox8_3 > a > button {width: 100px; height: 40px; background-color: #ef6c00; border: none; color: #fff; border-radius: 5px;border: 1px solid #ef6c00; float: left;}
+
+		.ctbox8_3 > a > button:hover {background-color: transparent; color: #000; transition: all 0.2s; cursor: pointer;}
+
+}
+

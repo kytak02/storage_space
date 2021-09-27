@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+*{margin:0; box-sizing: border-box;}
+
+ul, ol, li {list-style: none; margin: 0; padding: 0;}
+
+span {font-family: 'Great Vibes', cursive;}
+
+a {text-decoration: none; color: black;}
+
+
+
+@media (max-width: 599px) {
+
+#wrap {width: 100%; height: auto; display: flex; flex-wrap: wrap; justify-content: center; align-content: center; font-family: 'Hind Siliguri', sans-serif;} 
+
+			#slider {width: 100%; height:750px; display: flex; justify-content: center; align-items: center;}
+
+			#slider {background-image:url("https://images.unsplash.com/photo-1516750548995-3db798a6f427?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"); background-size: cover; background-position: center;}
+
+			#slider > img {width: 100%; height: 100%;}
+
+			.stbox {width: 100%; height: 60%; margin: 0 auto; text-align: center; padding: 10px;}
+
+			.stbox > span {font-size: 35px; color: #c49b63;}
+
+			.stbox > h2 {font-size: 30px; color: #fff; letter-spacing:5px;}
+
+			.stbox > p {font-size: 18px; color: #fff;}
+
+			.stbox > button {width: 110px; height: 55px; border: 1px solid #deb887; font-size: 14px; background-color: #deb887; margin: 30px 0 0 5px;}
+
+			.stbox > button:hover {background-color: transparent; cursor: pointer; transition: all 0.2s; color: #deb887;}
+
+			.stbox > button:last-child {width: 110px; height: 55px; border: 1px solid #fff; font-size: 14px; background-color: transparent;  color: #fff;}
+
+			.stbox > button:last-child:hover {background-color: #deb887; cursor: pointer; transition: all 0.2s; color: #000; border: 1px solid #deb887;}
+
+
+
+
+
+
+
+			#banner1 {width: 100%; height: 980px; background-color: black; float: left; display: flex; flex-wrap: wrap; flex-direction: column;}
+
+			.bannerbox1 {width:100%; height: 450px; float: left;}
+
+
+
+			.bannerbox1_1 {width:100%; height: 150px; float: left; display: flex; flex-direction: row; justify-content: center; align-content: center;}			
+
+			.bannerbox1_1 > img {width: 10%; height: 25%; float: left; margin: 22px 0 0 5px;}
+
+			.bannerbox1_1 > .bntextbox {width: 80%; height: 100%; float: left; margin: 0 auto; padding: 30px;}
+
+
+
+
+			.bannerbox1_2 {width:100%; height: 150px; float: left; display: flex; flex-direction: row; justify-content: center; align-content: center;}
+
+			.bannerbox1_2 > img {width: 10%; height: 25%; float: left; margin: 22px 0 0 5px;}
+
+			.bannerbox1_2 > .bntextbox {width: 80%; height: 100%; float: left; margin: 0px 30px 0 0px; padding: 30px;}
+
+
+
+
+			.bannerbox1_3 {width:100%; height: 150px; float: left; display: flex; flex-direction: row; justify-content: center; align-content: center;}
+
+			.bannerbox1_3 > img {width: 10%; height: 25%; float: left; margin: 22px 0 0 5px;}
+
+			.bannerbox1_3 > .bntextbox {width: 80%; height: 100%; float: left; margin: 0px 30px 0 0px; padding: 30px;}
+
+
+
+			.bntextbox > h3 {font-size: 17px; color: #fff;}
+
+			.bntextbox > p {font-size: 16px; color: gray;}
+
+
+
+
+
+
+			.bannerbox2 {width:100%; height: 530px; background-color: #c49b63; float: left; padding: 30px; color: #fff; float: left; margin: 0px 0 0 0px;}
+
+			.bannerbox2 > input:first-of-type {border: none; border-bottom: 1px solid #fff; background-color: #c49b63; width: 100%; height: 50px;}
+
+			.bannerbox2 > input:nth-of-type(2) {border: none; border-bottom: 1px solid #fff; background-color: #c49b63; width: 100%; height: 50px;}
+
+			.bannerbox2 > input:nth-of-type(3) {border: none; border-bottom: 1px solid #fff; background-color: #c49b63; width: 100%; height: 50px;}
+
+			.bannerbox2 > input:nth-of-type(4) {border: none; border-bottom: 1px solid #fff; background-color: #c49b63; width: 100%; height: 50px;}
+
+			.bannerbox2 > input:last-of-type {border: none; border-bottom: 1px solid #fff; background-color: #c49b63; width: 100%; height: 50px;}
+
+			.bannerbox2 > input {margin: 1%; color: #fff;}
+
+			.bannerbox2 > .tbbox {width: 98%; height: 50px; float: left; margin: 20px 0 0 5px;}
+
+			.bannerbox2 > .tbbox > textarea {border: none; background-color: #c49b63; width: 100%; height: 60px; color: #fff; border-bottom: 1px solid #fff; font-weight: bold; float: left;}
+
+			.bannerbox2 > .tbbox > button {width: 100%; height: 50px; margin: 20px 0 0px 0px; border: none; float: left; }
+
+			.bannerbox2 > .tbbox > button:hover {cursor: pointer; background-color: black; color: #fff; transition: all 0.2s;}
+
+
+
+
+
+
+
+
+
+			#container1 {width: 100%; height: 900px; float: left; display: flex; flex-wrap: wrap; flex-direction: column;}
+
+			.cbox1 {width: 100%; height: 450px; float: left;}
+
+			.cbox1 > img {width: 100%; height: 100%;}
+
+			
+
+			.cbox2 {width: 100%; height: 450px; background-color: #151111; float: left; padding: 40px;}
+
+			.cbox2 > span {font-size: 47px; color: #c49b63;}
+
+			.cbox2 > h1 {font-size: 40px; color: #fff; margin: -32px 0 0 0px; font-family: 'Roboto', sans-serif; letter-spacing:2px;}
+
+			.cbox2 > p {font-size: 16px; color: gray;}
+
+
+
+
+
+			#container2 {width: 100%; height: 1100px; background-color: #c49b63; float: left; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+			.exbox {width: 90%; height: 300px; margin: 1%; float: left; text-align: center;}
+
+			.exbox > .imgbox {width:100px; height: 100px; border: 1px solid #000; margin: 0 auto;}
+
+			.exbox > .imgbox > img {width:70%; height: 70%; margin: 10px;}
+
+			.exbox > p {font-size: 16px;line-height: 20px;}
+
+
+
+
+
+			#container3 {width: 100%; height: 1650px; float: left; background-color: #151111; padding: 10px; display: flex; flex-direction: column;}	
+
+			.menubox0 {width:100%; height: 350px; float: left; padding: 40px; text-align: left;}		
+
+			.menubox0 > span {font-size: 45px; color: #c49b63;}
+
+			.menubox0 > h1 {font-size: 42px; color: #fff; margin: -33px 0 0 0px;}
+
+			.menubox0 > p {font-size: 16px; color: gray;}		
+
+			.menubox0 > button {width: 150px; height: 55px; padding: 5px; border: 1px solid #c49b63; font-size: 14px; background-color: transparent;  color: #c49b63; margin: 20px 0 0 0px;}
+
+			.menubox0 > button:hover {background-color: #c49b63; cursor: pointer; transition: all 0.2s; color: #fff; border: 1px solid #deb887;}
+
+			.menubox {width:100%; height: 300px; float: left; margin: 5px auto; overflow: hidden;}
+
+			.menubox > img {width: 100%; height: 100%; transform: scale(1);}
+
+			.menubox > img:hover {cursor: pointer; transform: scale(1.09); transition: all 0.5s;}
+
+
+
+
+
+			#banner2 {width: 100%; height:1000px; float: left;}
+
+
+			#banner2 {background:url("https://preview.colorlib.com/theme/coffeeblend/images/xbg_2.jpg.pagespeed.ic.q3FmqSxDIf.webp"); background-size: cover; background-position: center;}
+
+			#colorbox {width: 100%; height: 1000px; background-color: rgba(0,0,0,0.7);  padding: 92px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+
+			.bannerbox3 {width:50%; height: 300px; margin:1%; float: left; display: flex; flex-direction: column; justify-content: center;align-items: center;}
+
+			.bannerbox3 > img {width:80px; height: 80px; padding: 10px; margin: 0px 0 0 10px;}
+
+			.bannerbox3 > h2 {font-size:31px; color: #c49b63;}
+
+			.bannerbox3 > p {font-size:16px; color: #bdbdbd;}
+
+
+
+
+
+
+
+			#container4 {width: 100%; height: 2520px; float: left; background-color: #151111; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 20px;}
+
+			.bestbox0 {width:100%; height: 200px; float: left; margin: 0 auto; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+			.bestbox0 > span {color: #c49b63; font-size: 45px; margin: 0px 0 -25px 0px;}
+
+			.bestbox0 > h1 {color: #fff; font-family: 'Roboto', sans-serif; letter-spacing:3px;}
+
+			.bestbox0 > p {color: gray;}
+
+			#bestbox1 {width:100%; height: 2400px; margin: 30px 0 0 0px;}
+
+			.bestbox {width: 100%; height: 550px; float: left; margin:10px auto; text-align: center;}
+
+			.bestbox > img {width:100%; height: 55%;}
+
+			.bestbox > h2 {color: #fff; font-size: 17px; letter-spacing: 2px;}
+
+			.bestbox > p {color: gray; line-height: 30px; font-size: 15px;}
+
+			.bestbox > button {width: 100px; height: 35px; border: 1px solid #c49b63; font-size: 14px; background-color: transparent;  color: #c49b63; padding: 5px;}
+
+			.bestbox > button:hover {background-color: #c49b63; cursor: pointer; transition: all 0.2s; color: #fff; border: 1px solid #deb887;}
+
+
+
+
+
+
+			#banner3 {width: 100%; height: 1250px; float: left; display: flex; overflow: hidden; display: flex; flex-direction: column;}
+
+			#banner3 > img {width:100%; height: 25%; margin:0; overflow: hidden; transform: scale(1);}
+
+			#banner3 > img:hover {cursor: pointer; transform: scale(1.05); transition: all 0.3s;}
+
+
+
+
+
+			#container5 {width:100%; height: 2380px; float: left; background-color: #151111; padding: 10px; display: flex; flex-direction: column;}
+
+			.pdbox0 {width: 100%; height: 200px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+			.pdbox0 > span {color: #c49b63; font-size: 40px; margin: 0px 0 -25px 0px;}
+
+			.pdbox0 > h1 {color: #fff; font-family: 'Roboto', sans-serif; letter-spacing: 3px;}
+
+			.pdbox0 > p {color: gray; font-size: 16px;}
+
+			.pdbox1 {width: 100%; height: 2100px; display: flex; flex-direction: column; justify-content: space-around; margin: 30px 0 0 0px;}
+
+			.pdbox {width: 100%; height: 650px; float: left; text-align: center; margin: 10px auto;}
+
+			.pdbox > img {width:95%; height: 50%;}
+
+			.pdbox > h2 {color: #fff; font-size: 20px; margin: 10px 0 0 0px; letter-spacing: 2px;}
+
+			.pdbox > p {color: gray; line-height: 30px; font-size: 15px;}
+
+			.pdbox > button {width: 100px; height: 35px; border: 1px solid #c49b63; font-size: 14px; background-color: transparent;  color: #c49b63; padding: 5px;}
+
+			.pdbox > button:hover {background-color: #c49b63; cursor: pointer; transition: all 0.2s; color: #fff; border: 1px solid #deb887;}
+			
+			.btbox {width: 100%; height: 220px; padding: 3px; display: flex; flex-direction: column; justify-content: space-around;}
+
+			.btbox > button:first-of-type {background-color: #c49b63; color: #000;}		
+
+			.btbox > button {width: 100%; height: 55px; border: none; background-color: black; color: #fff; border-bottom: 2px solid #c49b63; color: #c49b63; font-size: 18px; margin-top: 10px;}
+
+			.btbox > button:hover {cursor: pointer; background-color: #c49b63; transition: all 0.2s; color: black;}
+
+
+
+
+			#container6 {width: 100%; height: 1350px; float: left; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+
+			#container6 {background:url("https://preview.colorlib.com/theme/coffeeblend/images/bg_1.jpg") fixed; background-size:cover; width:100%; height:1350px; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+
+			.rvbox0 {width: 100%; height: 200px; float: left; display: flex; flex-direction: column; justify-content: center; align-content: center; margin: 80px 0 0 0px; text-align: center; padding: 30px;}
+
+			.rvbox0 > span {color: #c49b63; font-size: 40px;}
+
+			.rvbox0 > h1 { font-size:35px; color: #fff; margin: -25px 0 0px 0px; font-family: 'Roboto', sans-serif; letter-spacing: 2.5px;}
+
+			.rvbox0 > p {color: gray; line-height: 25px; font-size: 15px;}
+
+			.rvbox1 {width: 100%; height: 1000px; float: left; display: flex; flex-direction: column; justify-content: center;}		
+
+			.rvbox {width: 100%; height: 190px; float: left; padding: 20px;  background-color: #c49b63; display: flex; flex-direction: column; justify-content: space-between;}		
+
+			.rvbox:nth-of-type(2) {height: 240px;}
+
+			.rvbox > p {font-size: 15px; color: #fff; line-height: 28px;}	
+
+			.rvbox:nth-of-type(2n) {background-color: #b6915a;}
+
+			#rsbox {width: 100%; height: 60px; float: left; display: flex; flex-wrap: wrap;} 
+
+			#rsbox > img {width: 12%; height: 60%; border-radius: 30px; float: left; margin: 10px 10px 0 0px;}						
+
+			#rsbox > .ptbox {width: 60%; height: 60px; padding: 6px; display: flex; flex-direction: column;}
+
+			.ptbox > h3 {color: #fff; font-size: 15px;}
+
+			.ptbox > p {color: #e0e0e0; font-size: 14px;}			
+
+
+
+
+			
+
+			#container7 {width: 100%; height: 1700px; float: left; background-color: #151111; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+
+			.blogbox {width:100%; height: 250px; float: left; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+			.blogbox > h1 {font-size: 40px; color: #fff;}
+
+			.blogbox > p {font-size: 17px; color: gray; line-height: 30px;}
+
+			.pzbox1 {width:100%; height: 1400px; display: flex; flex-direction: column; justify-content: center; align-content: center; margin: 10px auto;}
+
+			.pzbox {width: 100%; height: 450px; float: left;}
+
+			.pzbox > .pzimg {width: 100%; height: 60%;}
+
+			.pzbox > p > .pzcm {width: 6%; height: 3%; margin-bottom: -2px; padding-left: 6px; padding-right: 5px;}
+
+			.pzbox > h3 {font-size: 15px; color: #fff; letter-spacing: 1.5px; margin: 10px 0 0 0px;}
+
+			.pzbox > p {font-size: 15px; color: gray; line-height: 25px;}
+
+
+
+
+
+			#container8 {width: 100%; height: 980px; float: left; background-color: black; display: flex; flex-direction: column;}
+
+			.mapbox {width: 100%; height: 350px; float: left; background-color: #9575cd;}
+
+			.mapbox > iframe {width: 100%; height: 100%;}
+
+			.tablebox {width: 100%; height: 630px; float: left; margin: 0 auto; color: #fff; padding: 25px;}
+
+			.tablebox > input:first-of-type {border: none; border-bottom: 1px solid #424242; width: 100%; height: 45px;}
+
+			.tablebox > input:nth-of-type(2) {border: none; border-bottom: 1px solid #424242; width: 100%; height: 45px;}
+
+			.tablebox > input:nth-of-type(3) {border: none; border-bottom: 1px solid #424242; width: 100%; height: 45px;}
+
+			.tablebox > input:nth-of-type(4) {border: none; border-bottom: 1px solid #424242; width: 100%; height: 45px;}
+
+			.tablebox > input:last-of-type {border: none; border-bottom: 1px solid #424242; width: 100%; height: 45px;}
+
+			.tablebox > input {margin: 1%; color: #fff; background-color: transparent; opacity: 0.8; margin: 30px 0 0 0px;}
+
+			.tablebox > .tbbox {width: 100%; height: 60px; float: left; margin: 20px 0 0 5px;}
+
+			.tablebox > .tbbox > textarea {border: none; background-color: transparent; width: 100%; height: 60px; color: #fff; border-bottom: 1px solid #616161; font-weight: bold; float: left; opacity: 0.8;}
+
+			.tablebox > .tbbox > button {width: 100%; height: 60px; margin: 20px 0 0px 0px; border: none; float: left; background-color: #c49b63;}
+
+			.tablebox > .tbbox > button:hover {cursor: pointer; border: 1px solid #c49b63; color: #c49b63; background-color: transparent; transition: all 0.2s;}
+
+}

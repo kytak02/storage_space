@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>싸니까 믿으니까 인터파크도서</title>  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/common.css"><!-- common.css -->
+  <link rel="stylesheet" href="css/sub.css"><!-- sub.css -->
+  <script src="js/main/nav_3_allcategory.js"></script><!-- 내비 3 전체카테고리 -->    
+  <script src="js/sub/ct3_slide.js"></script><!-- 컨테인 3 - 슬라이드 -->
+  <script src="js/sub/ct4_livebook.js"></script><!-- 라이브북 슬라이드 --> 
+  <script src="js/sub/ct5_introduction.js"></script><!-- 책내용 json/script -->
+  <script src="js/sub/ct7_authorlist.js"></script><!-- 저자소개 -->
+  <script src="js/sub/ct8_otherbook.js"></script><!-- 역자의 다른 책 api -->
+  <script src="js/sub/ct11_first.js"></script><!-- 소설 분야에서 많은 회원이 구매한 책 api/slide -->
+  <script src="js/sub/ct11_second.js"></script><!-- 이 책을 조회한 회원들이 같이 본 책 api/slide -->
+  <script src="js/sub/ct11_third.js"></script><!-- 이 책을 구매한 회원들이 구매한 책 api/slide -->
+</head>
+<body>
+  <!--헤더 1-->
+  <header>
+    <div id="nav_1_wrap">
+      <nav class="nav_1">
+        <!--헤더 1 왼쪽-->
+        <div class="nav_1_left">
+          <ul>
+            <li><a href="main.html">홈</a></li>
+            <li><a href="#"><span>도서바로가기</span></a></li>
+            <li><a href="#">티켓</a></li>
+            <li><a href="#">투어</a></li>
+            <li><a href="#">아이마켓</a></li>
+          </ul>
+        </div>
+
+        <!--헤더 1 오른쪽-->
+        <div class="nav_1_right">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li>|</li>
+            <li><a href="#">회원가입</a></li>
+            <li>|</li>
+            <li><a href="#">북카트</a></li>
+            <li>|</li>
+            <li><a href="#">마이페이지</a></li>
+            <li>|</li>
+            <li><a href="#">북피니언</a></li>
+            <li>|</li>
+            <li><a href="#">고객센터</a></li>
+            <li>|</li>
+            <li><a href="#">모바일APP</a></li>
+            <li>|</li>
+            <li><a href="#">스마트콘<span>off</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!--헤더 2-->
+    <div id="nav_2_wrap">
+      <nav class="nav_2">
+        <!--헤더 2 로고-->
+        <div class="nav_2_box">
+          <a href="main.html"><img src="img/header/logo.png" alt="header_logo"></a>
+        </div>
+        <!--헤더 2 검색창-->
+        <div class="nav_2_box">
+          <div class="nav_2_searchbox">
+            <input type="text" placeholder="밤하늘, 별, 신비한 우주">
+            <img src="img/header/search.png" alt="header_search">
+          </div>
+        </div>
+        <!--헤더 2 쿠폰-->
+        <div class="nav_2_box">
+          <a href="#"><img src="img/header/coupon.jpg" alt="header_coupon"></a>
+        </div>
+      </nav>
+    </div>
+
+    <!--헤더 3-->
+    <div id="nav_3_wrap">
+      <nav class="nav_3">
+        <!--헤더 3 전체카테고리-->
+        <div class="nav_3_allcategory">
+          <span><i class="fas fa-bars"></i>
+          전체카테고리</span>
+        </div>
+        <!--헤더 3 내비게이션 1-->
+        <div class="nav_3_bundle">
+          <ul>
+            <li><a href="#">베스트셀러</a></li>
+            <li><a href="#">미디어추천</a></li>
+            <li><a href="#">신간</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </div>
+        <!--헤더 3 내비게이션 2-->
+        <div class="nav_3_bundle">
+          <ul>
+            <li><a href="#">국내</a></li>
+            <li><a href="#">외국</a></li>
+            <li><a href="#">ebook</a></li>
+            <li><a href="#">중고</a></li>
+            <li><a href="#">음반</a></li>
+            <li><a href="#">DVD</a></li>
+            <li><a href="#">북DB</a></li>                      
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- 전체 카테고리 북 리스트 -->
+    <div class="nav_3_allcategory_menu">
+      <div class="nav3_boxwrap1">
+        <!-- 전체카테고리 - 국내도서 -->
+        <div class="nav3_box">
+          <h4>국내도서></h4>
+          <br>
+          <ul>
+            <li><span><a href="#">소설</a></span><span><a href="#">자격서수험서</a></span></li>
+            <li><span><a href="#">장르소설</a></span><span><a href="#">공무원 수험서</a></span></li>
+            <li><span><a href="#">시·에세이</a></span><span><a href="#">컴퓨터·인터넷</a></span></li>
+            <li><span><a href="#">경제경영</a></span><span><a href="#">전공·대학교재</a></span></li>
+            <li><span><a href="#">자기계발</a></span><span><a href="#">여행</a></span></li>
+            <li><span><a href="#">사회과학</a></span><span><a href="#">취미레저</a></span></li>
+            <li><span><a href="#">역사·문화</a></span><span><a href="#">건강뷰티</a></span></li>
+            <li><span><a href="#">예술·대중문화</a></span><span><a href="#">잡지</a></span></li>
+            <li><span><a href="#">인문</a></span><span><a href="#">만화·라이트노벨</a></span></li>
+            <li><span><a href="#">자연·과학</a></span><span><a href="#">유아동전집</a></span></li>
+            <li><span><a href="#">종교·역학</a></span><span class="nav3_color"><a href="#">예약판매</a></span></li>
+            <li><span><a href="#">유아</a></span><span class="nav3_color"><a href="#">프리미엄북</a></span></li>
+            <li><a href="#">아동</a></li>
+            <li><a href="#">가정과생활</a></li>
+            <li><a href="#">청소년</a></li>
+            <li><a href="#">초등학습</a></li>
+            <li><a href="#">중등학습</a></li>
+            <li><a href="#">고등학습</a></li>
+            <li><a href="#">국어·외국어·사전</a></li>
+          </ul>
+        </div>
+        <!-- 전체카테고리 - 외국도서 -->
+        <div class="nav3_box">
+          <h4>외국도서></h4>
+          <br>
+          <ul>
+            <li><a href="#">어린이</a></li>
+            <li><a href="#">문학</a></li>
+            <li><a href="#">ELT·사전</a></li>
+            <li><a href="#">일본도서</a></li>
+            <li><a href="#">경제·인문</a></li>
+            <li><a href="#">실용·예술</a></li>
+            <li><a href="#">대학·전문서적</a></li>
+            <li><a href="#">컴퓨터</a></li>
+            <li><a href="#">해외잡지</a></li>
+            <li><a href="#">해외주문원서</a></li>
+            <li><a href="#">학습교구/게임</a></li>
+            <li><span class="nav3_color"><a href="#">예약판매</a></span></li>
+            <li><span class="nav3_color"><a href="#">원서vs번역서  </a></span></li>
+          </ul>
+        </div>
+        <!-- 전체카테고리 - eBook -->
+        <div class="nav3_box">
+          <h4>eBook></h4>
+          <br>
+          <ul>
+            <li><a href="#">소설</a></li>
+            <li><a href="#">장르소설</a></li>
+            <li><a href="#">시·에세이</a></li>
+            <li><a href="#">경제경영</a></li>
+            <li><a href="#">자기계발</a></li>
+            <li><a href="#">인문·역사</a></li>
+            <li><a href="#">예술·종교</a></li>
+            <li><a href="#">자연·사회과학</a></li>
+            <li><a href="#">가정·취미·건강</a></li>
+            <li><a href="#">초중고학습서</a></li>
+            <li><a href="#">어학서·수험서</a></li>
+            <li><a href="#">대학교재</a></li>
+            <li><a href="#">외국도서</a></li>
+            <li><a href="#">만화</a></li>
+            <li><a href="#">어린이·청소년</a></li>
+            <li><a href="#">잡지</a></li>
+            <li><a href="#">성인</a></li>
+            <li><a href="#">북씨</a></li>
+            <li><span class="nav3_color"><a href="#">새로나온eBook</a></span></li>
+            <li><span class="nav3_color"><a href="#">대여 eBook </a></span></li>
+          </ul>
+        </div>
+        <!-- 전체카테고리 - 중고 -->
+        <div class="nav3_box">
+          <h4>중고></h4>
+          <br>
+          <ul>
+            <li><a href="#">소설</a></li>
+            <li><a href="#">에세이·시</a></li>
+            <li><a href="#">경제경영</a></li>
+            <li><a href="#">자기계발</a></li>
+            <li><a href="#">사회과학</a></li>
+            <li><a href="#">역사</a></li>
+            <li><a href="#">예술·대중문화</a></li>
+            <li><a href="#">인문</a></li>
+            <li><a href="#">자연과 과학</a></li>
+            <li><a href="#">종교·역학</a></li>
+            <li><a href="#">유아</a></li>
+            <li><a href="#">아동</a></li>
+            <li><a href="#">가정과생활</a></li>
+            <li><a href="#">청소년</a></li>
+            <li><a href="#">초중고학습서</a></li>
+            <li><a href="#">국어·외국어</a></li>
+            <li><a href="#">자격서·수험서</a></li>
+            <li><a href="#">전공·대학교재</a></li>
+            <li><a href="#">외국도서</a></li>
+            <li><a href="#">건강·미용</a></li>
+            <li><a href="#">만화</a></li>
+            <li><a href="#">중고음반</a></li>
+            <li><a href="#">중고DVD</a></li>
+            <li><span class="nav3_color"><a href="#">균일가몰</a></span></li>
+            <li><span class="nav3_color"><a href="#">판매자 로그인  </a></span></li>                
+          </ul>
+        </div>
+        <!-- 전체카테고리 - CD/DVD/굿즈 -->
+        <div class="nav3_box">
+          <!-- 전체카테고리 - CD/ -->
+          <div class="nav3_music">
+            <h4>음반></h4>
+            <br>
+            <ul>
+              <li><span><a href="#">가요</a></span><span><a href="#">재즈</a></span></li>
+              <li><span><a href="#">팝</a></span><span><a href="#">유아·아동·태교</a></span></li>
+              <li><span><a href="#">클래식</a></span><span><a href="#">뮤직 DVD</a></span></li>
+              <li><span><a href="#">국악</a></span><span><a href="#">O.S.T</a></span></li>
+              <li><span><a href="#">일본음악</a></span><span><a href="#">월드뮤직</a></span></li>
+              <li><span><a href="#">락</a></span><span><a href="#">종교</a></span></li>
+              <li><span><a href="#">뉴에이지</a></span><span class="nav3_color"><a href="#">예약판매</a></span></li>
+              <li><span><a href="#">해외구매</a></span><span class="nav3_color"><a href="#">스타샵</a></span></li>
+              <li><span><a href="#">수입음반</a></span><span class="nav3_color"><a href="#">아티스트파일</a></span></li>
+              <li class="nav3_right"><span class="nav3_color"><a href="#">LP</a></span></li>                          
+            </ul>
+          </div>
+          <!-- 전체카테고리 - DVD -->
+          <div class="nav3_music">
+            <h4>DVD></h4>
+            <br>
+            <ul>
+              <li><span><a href="#">블루레이</a></span><span><a href="#">TV시리즈</a></span></li>
+              <li><span><a href="#">EBS교육용</a></span><span><a href="#">해외구매</a></span></li>
+              <li><span><a href="#">유아동·교육 DVD</a></span><span><a href="#">블루레이해외구매</a></span></li>
+              <li><span><a href="#">영화</a></span><span><a href="#">애니메이션</a></span></li>
+              <li><span><a href="#">다큐멘터리</a></span><span><a href="#">예약판매</a></span></li>                    
+              <li><a href="#">건강·취미·스포츠</a></li>
+            </ul>
+          </div>
+          <!-- 전체카테고리 - 굿즈 -->
+          <div class="nav3_music">
+            <h4>굿즈#></h4>
+            <br>
+            <ul>
+              <li><a href="#">문구/팬시</a></li>
+              <li><a href="#">사무/학용</a></li>
+              <li><a href="#">학습</a></li>
+              <li><a href="#">독서용품</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 전체카테고리 - 닫힘 버튼 -->
+      <div class="nav3_boxwrap2">
+        <img src="img/header/closeX.png" alt="전체 카테고리 닫힘 버튼" class="nav3_closeX">
+      </div>          
+    </div>
+  </header>
+
+
+  <div id="wrap">
+
+    <div id="contain1">
+      <div class="ct1_title">
+        <p>홈 > 국내도서 > 소설 > 외국소설 > 일본소설</p>            
+      </div>  
+      <div class="ct1_title"> 
+        <div class="ct1_title2">
+          <img src="img/sub/contain1/recommend_book.png" alt="추천도서 하트">   
+          <p><strong>오늘 밤, 세계에서 이 사랑이 사라진다 해도</strong><br>
+            <span>베스트셀러</span><span>인터파크추천</span><span>소득공제</span></p>        
+          </div>
+          <div class="ct1_title2">
+            <p><a href="#"><span>★★★★★</span> 10 | <i class="far fa-edit"></i>리뷰</a></p>    
+          </div>        
+        </div>          
+      </div>
+
+
+      <div id="contain2_wrap">
+
+        <div id="contain2">
+          <!-- 작은 이벤트 배너 -->
+          <div class="ct2_leftbox">
+            <a href="#"><img src="img/sub/contain2/left1.jpg" alt="왼쪽 작은 이벤트 배너 1"></a>
+            <a href="#"><img src="img/sub/contain2/left2.jpg" alt="왼쪽 작은 이벤트 배너 2"></a>
+          </div>
+          <!-- 책표지 -->
+          <div class="ct2_bookbox">
+            <div class="ct2_book">
+              <img src="img/sub/contain2/main_book.jpg" alt="책표지">
+            </div>
+
+            <div class="ct2_book_detail">
+              <br>
+              <!-- 썸네일 크게/미리보기 -->
+              <div class="ct2_df">
+                <a href="#">
+                  <p><i class="fas fa-search"></i> 크게보기</p>
+                </a>
+                <a href="#">
+                  <p><i class="fas fa-book-open"></i> 미리보기</p>
+                </a>
+              </div>
+              <br>
+              <!-- 순위 -->
+              <div class="ct2_ranking">
+                <p><i class="fas fa-caret-right"></i> 주간 <span>2</span>위</p>
+                <p><i class="fas fa-caret-right"></i> 분야 <span>2</span>위</p>
+              </div>
+              <!-- 판매량 -->
+              <p class="ct2_other_dt">판매자수 <span> 128,297</span></p>
+              <p class="ct2_other_dt">공유하기<a href="#"><i class="fab fa-twitter-square"></i></a><a href="#"><i class="fab fa-facebook-square"></i></a></p>
+            </div>
+
+
+          </div>
+
+          <div class="ct2_mainbox">
+            <!-- 책정보 -->
+            <div class="ct2_author">
+              <ul>
+                <li><span>저 : </span>이치조 미사키</li>
+                <li class="slice">|</li>
+                <li><span>역 : </span>권영주</li>
+                <li class="slice">|</li>
+                <li><span>출판사 : </span>모모(스튜디오오드리)</li>
+                <li class="slice">|</li>
+                <li><span>발행 : </span>2021년 06월 28일</li>
+                <li class="slice">|</li>
+                <li><span>쪽수 : </span>376</li>
+                <li class="slice">|</li>
+                <li><span>제품구성 : </span>전1권</li>
+                <li class="slice">|</li>
+                <li><span>ISBN : </span>9791191043297</li>
+              </ul>
+            </div>
+            <!-- 가격 -->
+            <div class="ct2_main_price">
+              <br>
+              <p><span>정가</span>14,000원</p><br>
+              <div class="ct2_newbook">
+                <h4>새책</h4>
+                <span class="red_color">12,600원</span> (10% 할인)<br>
+                <p>700P (5%)적립</p>                            
+              </div><br>
+              <!-- 할인혜택 -->
+              <p><span>할인혜택</span><a href="#">카드/간편결제 할인 <i class="fas fa-angle-right"></i></a>
+                <a href="#"> 무이자 할부 <i class="fas fa-angle-right"></i></a></p><br>
+                <!-- 적립혜택 -->
+                <p><span>적립혜택</span> <strong class="purple">700P</strong> 
+                  (5%적립)<a href="#"><strong class="skyblue">5만원이상 주문시 2천P+등급별 최대 1.5%적립 <i class="fas fa-angle-right"></i></strong></a></p><br>
+
+                  <p class="ct2_interval">I-Point 적립은 출고완료 후 14일 이내 마이페이지에서 <strong class="red">적립받기</strong>한 경우만 적립됩니다.</p><br>
+                  <!-- 추가혜택 -->
+                  <p><span>추가혜택</span><a href="#"><img src="img/sub/contain2/coupon1.jpg" alt="제휴쿠폰 1"></a>
+                    <a href="#"><img src="img/sub/contain2/coupon2.jpg" alt="제휴쿠폰 2"></a>
+                    <a href="#"><img src="img/sub/contain2/coupon3.png" alt="제휴쿠폰 3"></a><br>
+                    <a href="#"><img src="img/sub/contain2/book_benefit2.jpg" alt="베네핏" class="benefit"></a>
+                  </p>
+                  <br>
+                  <!-- 배송정보 -->
+                  <p><span>배송정보</span> <strong class="redbox">당일배송</strong> 
+                    <strong class="bluebox">하루배송</strong> <i class="far fa-question-circle"></i> 
+                    당일배송을 원하실 경우 주문시 <strong class="red">당일배송</strong>을 선택해주세요.                     
+                  </p><br>
+                  <!-- 주소 -->
+                  <p class="ct2_interval">
+                    <strong>서울시 강남구 삼성로 512</strong> <i class="far fa-question-circle"></i>
+                    <a href="#">
+                      변경 <i class="fas fa-angle-right"></i>
+                    </a>
+                    <a href="#">
+                      배송지연보상 안내 <i class="fas fa-angle-right"></i>
+                    </a>
+                    무료배송 / 해외배송가능
+                  </p><br>
+                  <!-- 주문수량 -->
+                  <p><span>주문수량</span>
+                    <strong class="ct2_order">
+                      <strong class="minus">-</strong>
+                      <input type="text" placeholder="1" class="ct2_input">
+                      <strong class="plus">+</strong>
+                    </strong>
+                  </p><br><br>
+                  <!-- 책구매/담기 버튼 -->
+                  <div class="ct2_buy">
+                    <button>
+                      북카트 담기
+                    </button>
+
+                    <button>
+                      바로구매
+                    </button>
+
+                    <button>
+                      <i class="far fa-heart"></i> 174
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- 컨테인 3 -->
+          <div id="contain3">
+            <div class="ct3_navbox">
+              <ul>
+                <li>이벤트/기획전</li>
+                <li>연관도서</li>
+                <li><span>사은품(4)</span></li>
+              </ul>
+            </div>
+            <div class="ct3_clickbox">
+              <!-- 클릭 슬라이드 -->
+              <div class="ct3_cbwrap">                
+                <ul class="ct3_middle"> 
+                  <!-- 1 -->
+                  <li><span><a href="#"><img src="img/sub/contain3/main_slide1.jpg" alt="사은품 메인 1"></a></span>
+                    <p><span class="light_gray">[유료7,000p] 페코짱_샐러드박스</span>
+                      <span class="gray">대상도서 40,000원 이상 구매시</span>
+                      <span class="black"><strong>◑</strong> 7,000 point</span>
+                    </p></li>
+                    <!-- 2 -->
+                    <li><span><a href="#"><img src="img/sub/contain3/main_slide2.jpg" alt="사은품 메인 2"></a></span>
+                      <p><span class="light_gray">[유료5,000p] 페코짱_캐니스터</span>
+                        <span class="gray">대상도서 30,000원 이상 구매시</span>
+                        <span class="black"><strong>◑</strong> 5,000 point</span>
+                      </p></li>
+                      <!-- 3 -->
+                      <li><span><a href="#"><img src="img/sub/contain3/main_slide3.jpg" alt="사은품 메인 3"></a></span>
+                        <p><span class="light_gray">[유료6,000p] 농심쌀국수+..(지급종료)</span>
+                          <span class="gray">대상도서 20,000원 이상 구매시</span>
+                          <span class="black"><strong>◑</strong> 6,000 point</span>
+                        </p></li>
+                        <!-- 4 -->
+                        <li><span><a href="#"><img src="img/sub/contain3/main_slide4.jpg" alt="사은품 메인 4"></a></span>
+                          <p><span class="light_gray">[유료1,000p] 인센스 스틱(지급종료)</span>
+                            <span class="gray">대상도서 10,000원 이상 구매시</span>
+                            <span class="black"><strong>◑</strong> 1,000 point</span>
+                          </p></li>               
+                        </ul>
+                      </div>
+                      <span class="ct3_prev">&lt;</span>
+                      <span class="ct3_next">&gt;</span>
+
+                    </div>
+                    <!-- 자동 슬라이드 -->
+                    <div class="ct3_autobox">
+                      <ul class="ct3_autobook">
+                        <li><a href="#"><img src="img/sub/contain3/sub_slide1.jpg" alt="사은품 책 1"></a></li>
+                        <li><a href="#"><img src="img/sub/contain3/sub_slide2.jpg" alt="사은품 책 2"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  
+                  <ul id="main_navbox1">
+                    <li>책정보</li>
+                    <li>이벤트/기획전</li>
+                    <li>추천도서</li>
+                    <li>기대평/리뷰</li>
+                    <li>교환/환불/배송</li>
+                  </ul>
+                  
+                  <div id="contain4">
+                    <!-- 이상품의 분류 -->
+                    <div class="ct4_titlebox">
+                      <div class="ct4_title">
+                        <h2>이상품의 분류</h2>
+                      </div>
+                      <div class="ct4_subtitle">
+                        <br><br><br><br>
+                        <p>Home <i class="fas fa-angle-right"></i>
+                          도서 <i class="fas fa-angle-right"></i>
+                          소설 <i class="fas fa-angle-right"></i>
+                          외국소설 <i class="fas fa-angle-right"></i>
+                        일본소설</p><br>
+                        <p>Home <i class="fas fa-angle-right"></i>
+                          도서 <i class="fas fa-angle-right"></i>
+                          소설 <i class="fas fa-angle-right"></i>
+                          장르소설 <i class="fas fa-angle-right"></i>
+                          로맨스소설 <i class="fas fa-angle-right"></i>
+                        외국로맨스소설</p>
+                      </div> 
+                    </div>
+                    <!-- 라이브북 -->
+                    <div class="ct4_live">                      
+                      <div class="ct4_maintitle">
+                        <h2>라이브북</h2>
+                      </div> 
+                      <!-- 클릭 슬라이드 -->
+                      <div class="ct4_show">
+                        <div class="ct4_mainwrap">
+                          <ul class="ct4_mainpic">
+                            <li><img src="img/sub/contain4/show_slide1.jpg" alt="라이브북 책표지 1"></li>
+                            <li><img src="img/sub/contain4/show_slide2.jpg" alt="라이브북 책표지 2"></li>
+                            <li><img src="img/sub/contain4/show_slide3.jpg" alt="라이브북 책표지 3"></li>
+                            <li><img src="img/sub/contain4/show_slide4.jpg" alt="라이브북 책표지 4"></li>
+                            <li><img src="img/sub/contain4/show_slide5.jpg" alt="라이브북 책표지 5"></li>
+                            <li><img src="img/sub/contain4/show_slide6.jpg" alt="라이브북 책표지 6"></li>
+                            <li><img src="img/sub/contain4/show_slide7.jpg" alt="라이브북 책표지 7"></li>
+                            <li><img src="img/sub/contain4/show_slide8.jpg" alt="라이브북 책표지 8"></li>
+                            <li><img src="img/sub/contain4/show_slide9.jpg" alt="라이브북 책표지 9"></li>
+                          </ul>
+                        </div>
+                        <span class="ct4_prev">〈</span>
+                        <span class="ct4_next">〉</span>
+                      </div>
+                      <!-- 책표지 이미지 -->
+                      <div class="ct4_book">
+                        <ul class="ct4_subpic">
+                          <li><img src="img/sub/contain4/show_slide1.jpg" alt="라이브북 책표지 1"></li>
+                          <li><img src="img/sub/contain4/show_slide2.jpg" alt="라이브북 책표지 2"></li>
+                          <li><img src="img/sub/contain4/show_slide3.jpg" alt="라이브북 책표지 3"></li>
+                          <li><img src="img/sub/contain4/show_slide4.jpg" alt="라이브북 책표지 4"></li>
+                          <li><img src="img/sub/contain4/show_slide5.jpg" alt="라이브북 책표지 5"></li>
+                          <li><img src="img/sub/contain4/show_slide6.jpg" alt="라이브북 책표지 6"></li>
+                          <li><img src="img/sub/contain4/show_slide7.jpg" alt="라이브북 책표지 7"></li>
+                          <li><img src="img/sub/contain4/show_slide8.jpg" alt="라이브북 책표지 8"></li>
+                          <li><img src="img/sub/contain4/show_slide9.jpg" alt="라이브북 책표지 9"></li>
+                        </ul>
+                      </div>                     
+                    </div>
+                  </div>
+
+
+                  <div id="contain5">
+
+                    <div class="ct5_wrap1">
+                      <!-- 책 내용 -->                     
+                      <div class="ct5_detail">
+                        <div class="ct5_book1">
+
+                        </div>
+
+                        <div class="ct5_book2">
+                          <span class="ct5_btn1">펼처보기 <i class="fas fa-chevron-down"></i></span>
+                          <span class="ct5_btn2">접어보기 <i class="fas fa-chevron-up"></i></span>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct5_wrap2">
+                      <!-- 출판사 서평 -->                    
+                      <div class="ct5_detail">
+                        <div class="ct5_publisher1">
+
+                        </div>
+
+                        <div class="ct5_publisher2">
+                          <span class="ct5_btn3">펼처보기 <i class="fas fa-chevron-down"></i></span>
+                          <span class="ct5_btn4">접어보기 <i class="fas fa-chevron-up"></i></span>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="ct5_wrap3">                      
+                      <div class="ct5_detail">
+                        <!-- 목차 -->
+                        <div class="ct5_sequence1">
+                          <h2>목차</h2>
+                          <br>
+                          <p>
+                            모르는 남자애의, 모르는 여자애<br>
+                            걸음을 뗀 두 사람<br>
+                            이 여름은 언제나 한 번<br>
+                            하얀 공백<br>
+                            모르는 여자애의, 모르는 남자애<br>
+                            마음은 너를 그리니까
+                          </p>
+                          <br>
+                        </div>                        
+                      </div>
+                    </div>
+
+
+                    <div class="ct5_wrap4">                    
+                      <div class="ct5_detail">
+                        <!-- 본문에서 -->
+                        <div class="ct5_maintext1">
+
+                        </div>
+
+                        <div class="ct5_maintext2">
+                          <span class="ct5_btn5">펼처보기 <i class="fas fa-chevron-down"></i></span>
+                          <span class="ct5_btn6">접어보기 <i class="fas fa-chevron-up"></i></span>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div id="contain6">
+                    <!-- 책 메인 이미지 -->
+                    <div class="ct6_title">
+                      <h2>관련이미지</h2>
+                    </div>
+                    <br>
+                    <img src="img/sub/contain6/sub_main.jpg" alt="서브 메인 이미지">                    
+                  </div>
+
+
+                  <div id="contain7">
+                    <!-- 저자소개 -->
+                    <div class="ct7_title">
+                      <h2>저자소개</h2>
+                      <br>
+                    </div>
+                    <!-- 저자 1 정보 -->
+                    <div class="ct7_authorbox1">
+                      <p class="ct7_authortitle">이치조 미사키 [저]<span><a href="#">신작일림 SMS신청 <i class="fas fa-angle-right"></i></a>
+                        <a href="#"> 작가 DB보기 <i class="fas fa-angle-right"></i></a></span></p>
+                        <div class="ct7_author1">
+                          <table>
+                            <tr>
+                              <td>생년월일</td><td>-</td>
+                            </tr>
+                            <tr>
+                              <td>출생지</td><td>-</td>
+                            </tr>
+                            <tr>
+                              <td>출간도서</td><td>0종</td>
+                            </tr>
+                            <tr>
+                              <td>판매수</td><td>0권</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <!-- 저자 1 세부정보 -->
+                        <div class="ct7_author2">
+                        </div>
+                      </div>
+                      <!-- 저자소개 2 -->
+                      <div class="ct7_authorbox2">
+                        <!-- 저자 2 정보 -->
+                        <p class="ct7_authortitle">권영주 [역]<span><a href="#">신작일림 SMS신청 <i class="fas fa-angle-right"></i></a>
+                          <a href="#"> 작가 DB보기 <i class="fas fa-angle-right"></i></a></span></p>
+                          <div class="ct7_author3">
+                            <table>
+                              <tr>
+                                <td>생년월일</td><td>-</td>
+                              </tr>
+                              <tr>
+                                <td>출생지</td><td>-</td>
+                              </tr>
+                              <tr>
+                                <td>출간도서</td><td>0종</td>
+                              </tr>
+                              <tr>
+                                <td>판매수</td><td>0권</td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!-- 저자 2 세부정보 -->
+                          <div class="ct7_author4">
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <!-- 역자의 다른 책 -->
+                      <div id="contain8">
+                        <div class="ct8_title">
+                         <h3>역자의 다른책</h3><span><a href="#">전체보기 <i class="fas fa-angle-right"></i></a></span>
+                       </div>
+                       <!-- 책 리스트 -->
+                       <div class="ct8_bookwrap">                        
+                        <div class="ct8_book"></div>
+                        <div class="ct8_book"></div>
+                        <div class="ct8_book"></div>
+                        <div class="ct8_book"></div>
+                        <div class="ct8_book"></div>
+                        <div class="ct8_book"></div>
+                      </div>
+                    </div>
+
+
+                    <!-- 상품정보제공고시 -->
+                    <div id="contain9">
+                      <div class="ct9_title">
+                        <h3>상품정보제공고시</h3>
+                      </div>
+                      <br>
+                      <!-- 테이블 -->
+                      <div class="ct9_tablebox">
+                        <table>
+                          <tr>
+                            <td>저자</td>
+                            <td>이치조 미사키</td>
+                            <td>기획사/제작사</td>
+                            <td>모모(스튜디오오드리)</td>
+                          </tr>
+                          <tr>
+                            <td>ISBN</td>
+                            <td>9791191043297</td>
+                            <td>쪽수</td>
+                            <td>376쪽</td>
+                          </tr>
+                          <tr>
+                            <td>크기</td><td>128x188(사륙)</td><td>제품구성</td><td>전1권</td>
+                          </tr>
+                          <tr>
+                            <td>발행일(출간일)</td>
+                            <td>2021년 06월28일</td>
+                            <td>목차 또는 책소개</td>
+                            <td>상품 상세 정보를 확인하시고, 정보확인이 어려우<br>시면 1:1문의 게시판을 이용 바랍니다.</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+
+                    <ul id="main_navbox2">
+                      <li>책정보</li>
+                      <li>이벤트/기획전</li>
+                      <li>추천도서</li>
+                      <li>기대평/리뷰</li>
+                      <li>교환/환불/배송</li>
+                    </ul>
+
+                    <!-- 이벤트 기획전 -->
+                    <div id="contain10">
+                      <div class="ct10_title">
+                        <h3>이벤트 기획전</h3>
+                      </div>
+                      <br>
+                      <!-- 이벤트 배너 이미지 -->
+                      <div class="ct10_eventbox">
+                        <a href="#"><img src="img/sub/contain10/event1.jpg" alt="이벤트 기획전 1"></a>
+                        <a href="#"><img src="img/sub/contain10/event2.jpg" alt="이벤트 기획전 1"></a>
+                      </div>
+                    </div>
+                    <!-- 내비게이션 3 -->
+                    <ul id="main_navbox3">
+                      <li>책정보</li>
+                      <li>이벤트/기획전</li>
+                      <li>추천도서</li>
+                      <li>기대평/리뷰</li>
+                      <li>교환/환불/배송</li>
+                    </ul>
+
+                    <!-- 컨테인 11 -->
+                    <div id="contain11"> 
+                      <!-- 소설 분야에서 많은 회원이 구매한 책 -->
+                      <div class="ct11_wrap">                        
+                        <div class="ct11_title">
+                          <h4>소설 분야에서 많은 회원이 구매한 책</h4>
+                        </div>
+                        <div class="ct11_listbox">
+                          <div class="ct11_mainwrap">
+                            <ul class="ct11_bookwrap">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>
+                            <ul class="ct11_bookwrap">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="ct11_prev">&lt;</span>
+                        <span class="ct11_next">&gt;</span>
+                      </div>
+                      <!-- 이 책을 조회한 회원들이 같이 본 책 -->
+                      <div class="ct11_wrap2">
+                        <div class="ct11_title">
+                          <h4>이 책을 조회한 회원들이 같이 본 책</h4>
+                        </div>
+                        <div class="ct11_listbox2">
+                          <div class="ct11_mainwrap2">
+                            <ul class="ct11_bookwrap2">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>
+                            <ul class="ct11_bookwrap2">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>                            
+                          </div>
+                        </div>
+                        <span class="ct11_prev2">&lt;</span>
+                        <span class="ct11_next2">&gt;</span>
+                      </div>
+                      <!-- 이 책을 조회한 회원들이 같이 본 책 -->
+                      <div class="ct11_wrap3">
+                        <div class="ct11_title">
+                          <h4>이 책을 조회한 회원들이 같이 본 책</h4>
+                        </div>
+                        <div class="ct11_listbox3">
+                          <div class="ct11_mainwrap3">
+                            <ul class="ct11_bookwrap3">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>
+                            <ul class="ct11_bookwrap3">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>                            
+                          </div>
+                        </div>
+                        <span class="ct11_prev3">&lt;</span>
+                        <span class="ct11_next3">&gt;</span>
+                      </div>
+
+                    </div>
+
+                    <!-- 내비게이션 4 -->
+                    <ul id="main_navbox4">
+                      <li>책정보</li>
+                      <li>이벤트/기획전</li>
+                      <li>추천도서</li>
+                      <li>기대평/리뷰</li>
+                      <li>교환/환불/배송</li>
+                    </ul>
+                    <!-- 컨테인 12 -->
+                    <div id="contain12">
+                      <!-- 리뷰 타이틀 -->
+                      <div class="ct12_title">
+                        <p>리뷰 <span>★★★★★</span> 10.0 <strong>(총 1건)</strong></p>
+                        <p>구매 후 리뷰 작성 시, 북피니언 지수 최대 600점 <span><a href="#">리뷰쓰기</a></span></p>
+                      </div>
+                      <!-- 최근순/추천순 -->
+                      <div class="ct12_sort">
+                        <p><strong>최근순</strong> | 추천순</p>
+                      </div>
+
+                      <div class="ct12_review">
+                        <!-- 리뷰 제목 -->
+                        <p class="ct12_rv_title">
+                          <span>★★★★★<strong>차라리 사랑의 역사였음을</strong></span><strong>sucb*** | 2021/07/23</strong>
+                        </p>
+                        <!-- 리뷰 내용 -->
+                        <div class="ct12_contents">
+                          <p>청소년기의 풋풋한 사랑을 그린 소설은 다른 어느 나라의 작가들보다 일본 작가의 실력이 단연코 앞선다고 생각한다. 물론 주관적인 견해에 불과하지만 말이다.<br>그러나 일본 작가가 쓴 비슷한 주제의 소설을 몇 권만 읽어보더라도 나의 의견에 어느 정도 공감하는 바가 있을 것이다. 다 그런 건 아니지만 그들은 그 시기의 아<br>이들이 이성교제에 있어 어떤 생각을 하는지, 어떤 행동을 할지 마치 해부를 하듯 하나하나 세심하게 그려내곤 한다. 물론 소설 전개에 있어서의 이러한...</p>
+                        </div>
+                        <!-- 댓글/추천/좋아요/감사합니다 -->
+                        <div class="ct12_likey">
+                          <p>댓글(0) | 추천(0) | 
+                            <span class="like"><i class="far fa-thumbs-up"></i> 추천하기</span>
+                            <span class="thank"><i class="far fa-smile"></i> 고맙습니다</span>
+                          </p>
+                        </div>
+                        <!-- 페이지 넘김 버튼 -->
+                        <div class="ct12_allbtn">
+                          <span>총 1 페이지</span>
+                          <ul>
+                            <li> ≪맨앞 </li>
+                            <li> ＜이전 </li>
+                            <li> 1 </li>
+                            <li> 다음＞ </li>
+                            <li> 맨뒤≫ </li>
+                          </ul>                          
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                    <!-- 컨테인 13 -->
+                    <div id="contain13">
+                      <!-- 기대평 타이틀 -->
+                      <div class="ct13_title">
+                        <h2>기대평</h2><span>작성시 유의사항 <i class="far fa-question-circle"></i></span>
+                      </div>                                            
+                      <div class="ct13_exbox">
+                        <!-- 기대평 평점 -->
+                        <p><input type="radio" checked> 기대평 | 평점<span>★★★★★</span></p>                        
+                        <div class="ct13_textbox">
+                          <!-- 글자 수 -->
+                          <p><span>25/200자</span></p><br>
+                          <!-- 리뷰 쓰기 칸 -->
+                          <div class="ct13_wrap">
+                            <textarea>이 책의 기대평(한줄평)을 간단히 남겨주세요.</textarea> <button>등록하기</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 기대평 리스트 -->
+                      <div class="ct13_gradebox">
+                        <p>기대평 ★★★★★ 9.9 <span><strong>최근순</strong> | 평점 높은순</span></p>
+                        <br>
+                        <!-- 기대평 순서 -->
+                        <table>
+                          <!-- 1 -->
+                          <tr>
+                            <td>★★★★★</td>
+                            <td>rhguswj***</td>
+                            <td>아직 읽기 전인데 기대 돼요</td>
+                            <td>2021/09/12</td>
+                          </tr>
+                          <!-- 2 -->
+                          <tr>
+                            <td>★★★★★</td>
+                            <td>zip***</td>
+                            <td>좋아요</td>
+                            <td>2021/09/12</td>
+                          </tr>
+                          <!-- 3 -->
+                          <tr>
+                            <td>★★★★★</td>
+                            <td>thd2***</td>
+                            <td>지금읽고있는데 재밌어요</td>
+                            <td>2021/09/10</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!-- 기대평 페이지 넘김 버튼 -->
+                      <div class="ct13_allbtn">
+                        <span>총 22 페이지</span>
+                        <ul>
+                          <li> ≪맨앞 </li>
+                          <li> ＜이전 </li>
+                          <li> 1 </li>
+                          <li> 2 </li>
+                          <li> 3 </li>
+                          <li> 4 </li>
+                          <li> 5 </li>
+                          <li> 6 </li>
+                          <li> 7 </li>
+                          <li> 8 </li>
+                          <li> 9 </li>
+                          <li> 10 </li>
+                          <li> 다음＞ </li>
+                          <li> 맨뒤≫ </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <!-- 내비게이션 5 -->
+                    <ul id="main_navbox5">
+                      <li>책정보</li>
+                      <li>이벤트/기획전</li>
+                      <li>추천도서</li>
+                      <li>기대평/리뷰</li>
+                      <li>교환/환불/배송</li>
+                    </ul>
+                    <!-- 컨테인 14 -->
+                    <div id="contain14">
+                      <!-- 교환/환불 타이틀 -->
+                      <div class="ct14_title">
+                        <h2>교환/환불</h2>
+                      </div>
+                      <!-- 교환/환불 공지사항 -->
+                      <div class="ct14_refundbox">
+                        <table>
+                          <!-- 1 -->
+                          <tr>
+                            <td>교환/환불 방법</td>
+                            <td>‘마이페이지 > 취소/반품/교환/환불’ 에서 신청함, 1:1 문의 게시판 또는 고객센터(1577-2555) 이용 가능</td>                            
+                          </tr>
+                          <!-- 2 -->
+                          <tr>
+                            <td>교환/환불 가능 기간</td>
+                            <td>고객변심은 출고완료 다음날부터 14일 까지만 교환/환불이 가능함</td>                            
+                          </tr>
+                          <!-- 3 -->
+                          <tr>
+                            <td>교환/환불 비용</td>
+                            <td>고객변심 또는 구매착오의 경우에만 2,500원 택배비를 고객님이 부담함</td>                            
+                          </tr>
+                          <!-- 4 -->
+                          <tr>
+                            <td>교환/환불 불가사유</td>
+                            <td>반품접수 없이 반송하거나, 우편으로 보낼 경우 상품 확인이 어려워 환불이 불가할 수 있음<br>
+                            배송된 상품의 분실, 상품포장이 훼손된 경우, 비닐랩핑된 상품의 비닐 개봉시 교환/반품이 불가능함</td>                            
+                          </tr>
+                          <!-- 5 -->
+                          <tr>
+                            <td>소비자 피해보상</td>
+                            <td>소비자 피해보상의 분쟁처리 등에 관한 사항은 소비자분쟁해결기준(공정거래위원회 고시)에 따라 비해 보상 받을 수 있음<br>
+                            교환/반품/보증조건 및 품질보증 기준은 소비자기본법에 따른 소비자 분쟁 해결 기준에 따라 피해를 보상 받을 수 있음</td>                            
+                          </tr>
+                          <!-- 6 -->
+                          <tr>
+                            <td>기타</td>
+                            <td>도매상 및 제작사 사정에 따라 품절/절판 등의 사유로 주문이 취소될 수 있음(이 경우 인터파크도서에서 고객님께 별도로 연락하여 고지함)</td>                            
+                          </tr>
+                        </table>
+                      </div>
+
+                    </div>
+
+                    <!-- 컨테인 15 -->
+
+                    <div id="contain15">
+                      <!-- 배송안내 타이틀 -->
+                      <div class="ct15_title">
+                        <h2>배송안내</h2>
+                      </div>
+                      <!-- 배송안내 공지사항 -->
+                      <div class="ct15_notice">
+                        <p>- 인터파크 도서 상품은 택배로 배송되며, 출고완료 1~2일내 상품을 받아 보실 수 있습니다.<br>
+                          - 출고가능 시간이 서로 다른 상품을 함께 주문할 경우 출고가능 시간이 가장 긴 상품을 기준으로 배송됩니다.<br>
+                          - 군부대, 교도소 등 특정기관은 우체국 택배만 배송가능하여, 인터파크 외 타업체 배송상품인 경우 발송되지 않을 수 있습니다.<br>
+                          - 배송비
+                        </p>
+                        <!-- 순서 -->
+                        <table>
+                          <!-- 1 -->
+                          <tr>
+                            <td>도서(중고도서 포함) 구매</td>
+                            <td>2,000원 (1만원이상 구매 시 무료배송)</td>
+                          </tr>
+                          <!-- 2 -->
+                          <tr>
+                            <td>음반/DVD/잡지/만화 구매</td>
+                            <td>2,000원 (2만원이상 구매 시 무료배송)</td>
+                          </tr>
+                          <!-- 3 -->
+                          <tr>
+                            <td>도서와 음반/DVD/잡지/만화/<br>
+                            중고직배송상품을 함께 구매</td>
+                            <td>2,000원 (1만원이상 구매 시 무료배송)</td>
+                          </tr>
+                          <!-- 4 -->
+                          <tr>
+                            <td>업체직접배송상품 구매</td>
+                            <td>업체별 상이한 배송비 적용</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- 푸터 -->
+                    <div id="footer_wrap">
+                      <footer id="footer">
+                        <!-- 1 -->
+                        <div class="ft_area">
+                          <ul>
+                            <li><span><a href="#">개인정보처리방침</a></span></li>
+                            <li>|</li>
+                            <li><a href="#">청소년보호정책</a></li>
+                            <li>|</li>
+                            <li><a href="#">이용약관</a></li>
+                            <li>|</li>
+                            <li><a href="#">IR</a></li>
+                            <li>|</li>
+                            <li><a href="#">회사소개</a></li>
+                            <li>|</li>
+                            <li><a href="#">채용공고</a></li>
+                            <li>|</li>
+                            <li><a href="#">우수고객제도</a></li>
+                            <li>|</li>
+                            <li><a href="#">수익배분프로그램</a></li>
+                            <li>|</li>
+                            <li><a href="#">신규출판사</a></li>
+                            <li>|</li>
+                            <li><a href="#">광고안내</a></li>
+                            <li>|</li>
+                            <li><a href="#">판매자매니저</a></li>         
+                          </ul>
+                        </div>
+                        <!-- 2 -->
+                        <div class="ft_area">
+                          <h5>인터파크</h5>                         
+                          <ul>
+                            <li>서울특별시 강남구 삼성로 512 삼성동빌딩 10층(삼성동)</li>
+                            <li>대표이사 이기형, 강동화</li>
+                            <li>사업자등록번호 220-81-47821<br>통신판매업신고 2015-서울강남-01050</li>
+                          </ul>
+                        </div>
+                        <!-- 3 -->
+                        <div class="ft_area">
+                          <h5>고객센터<a href="#"><img src="img/footer/footer_btn1.gif" alt="푸터 버튼 1"></a></h5> 
+                          <ul>
+                            <li>전화 1577-2555</li>
+                            <li>팩스 02-6924-9050</li>
+                            <li>개인정보보유기간 : 회원탈퇴시까지</li>
+                            <li>개인정보보호책임자 : 윤혜정 cpo@interpark.com
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- 4 -->
+                        <div class="ft_area">
+                          <h5>구매안전 서비스</h5>
+                          <ul>
+                            <li>고객님은 안전거래를 위해 현금으로 5만원 이상 결제시 구매자가 보호를 받을수 있는 구매안전 서비스를(쇼핑몰보증보험) 이용하실수 있습니다.</li>
+                            <li><a href="#"><img src="img/footer/footer_btn1.gif" alt="푸터 버튼 1"></a></li>       
+                          </ul>
+                        </div>
+                        <!-- 5 -->
+                        <div class="ft_area">
+                          <ul>
+                            <li>인터파크도서에 등록된 중고책 오픈마켓 상품은 그 내용과 책임이 모두 판매자에게 있으며, 인터파크도서는 해당상품과 내용에 대해 책임지지 않습니다.
+                            </li>
+                            <li><span>Copyright ⓒ INTERPARK Corporation All rights reserved.</span></li>
+                          </ul>
+                        </div>
+                      </footer>
+                    </div>
+                  </div>                                     
+                </body>
+                </html>
